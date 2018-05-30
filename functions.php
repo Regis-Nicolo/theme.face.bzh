@@ -9,6 +9,8 @@ function Rnface_scripts() {
 
 	wp_enqueue_style('Rnface_bootstrap-core',
 		get_template_directory_uri() . '/css/bootstrap.min.css', array(), RNFACE_VERSION,'all');
+	wp_enqueue_style('Rnface_fontawesome-core',
+		get_template_directory_uri() . '/css/fontawesome-all.min.css', array(), RNFACE_VERSION,'all');
 	wp_enqueue_style('Rnface_custom', get_template_directory_uri() . '/styles.css', array('Rnface_bootstrap-core'), RNFACE_VERSION, 'all');	
 
 	//chargement des scripts
@@ -36,7 +38,11 @@ function Rnface_setup() {
 	//support des vignettes
 	add_theme_support( 'post-thumbnails');
 }
-//fin fonction Rnface_setup
+	//fin fonction Rnface_setup
 
-add_action('after_setup_theme', 'Rnface_setup');
+	add_action('after_setup_theme', 'Rnface_setup');
+
+	//Fonction insertion d'image
+	//wp_get_attachement_image_src()
 ?>
+
