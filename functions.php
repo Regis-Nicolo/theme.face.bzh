@@ -11,8 +11,8 @@ function Rnface_scripts() {
 		get_template_directory_uri() . '/css/bootstrap.min.css', array(), RNFACE_VERSION,'all');
 	wp_enqueue_style('Rnface_fontawesome-core',
 		get_template_directory_uri() . '/css/fontawesome-all.min.css', array(), RNFACE_VERSION,'all');
-	wp_enqueue_style('Rnface_custom', get_template_directory_uri() . '/styles.css', array('Rnface_bootstrap-core'), RNFACE_VERSION, 'all');	
-
+	wp_enqueue_style('Rnface_custom', get_template_directory_uri() . '/style.css', array('Rnface_bootstrap-core'), RNFACE_VERSION, 'all');	
+	wp_enqueue_style('Rnface_custom', get_template_directory_uri() . '/css/main.css', array('Rnface_main'), RNFACE_VERSION, 'all');	
 	//chargement des scripts
 	wp_enqueue_script('Rnface_admin_script', get_template_directory_uri() . '/js/face.js', array('jquery'), RNFACE_VERSION, true);
 
