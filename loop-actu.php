@@ -9,17 +9,25 @@
  * @license GPL 2.0
  */
 ?>
+
 <?php if ( have_posts() ) : ?>
+		<div id="my-slider" class="carousel slide" data-ride="carousel">
 
-	<?php /* Start the Loop */ ?>
-	<?php while ( have_posts() ) : the_post(); ?>
-		<?php the_post_thumbnail(); ?>
-		<div style='background-color:red; width:50%'>
-		<?php the_content(); ?>
+			<div class="carousel-inner" role="listbox">
+			<?php $first=true; ?>
+			
+			<?php while ( have_posts() ) : the_post(); ?>
+				<div class="carousel-item <?php if($first){ echo 'active';$first=false; } ?>"> 
+
+				<?php the_post_thumbnail(); ?>
+				
+				<?php the_content(); ?>
+				</div>
+
+				
+
+			<?php endwhile; ?>
+			</div>
 		</div>
-
-	<?php endwhile; ?>
-
-	<?php //vantage_content_nav( 'nav-below' ); ?>
 
 <?php endif ?>

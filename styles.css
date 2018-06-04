@@ -82,7 +82,7 @@ body .ligne{
 	background:rgba(237,151,103,1);
 }
 body .page{
-	margin: auto 2.5em;
+	margin: auto 2.5;
 }
 .basis100 {
 	flex-basis:100%;
@@ -419,9 +419,16 @@ margin: 0 auto;
 	width: 15em;	
 	height: auto;
 }
-	.container{
-		max-width: 100%;
-	}
+.container{
+	max-width: 100%;
+}
+.carousel-inner{
+	width: 100%;
+}
+.carousel-item{
+	background-color: #F5F5F5;
+	height: 10em;
+}
 
 /*@media only screen and (min-width: 479px) {
 }
