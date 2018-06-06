@@ -20,4 +20,4 @@
 
 	<?php //vantage_content_nav( 'nav-below' ); ?>
 
-<?php endif : ?>
+<?php endif; ?>

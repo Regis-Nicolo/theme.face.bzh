@@ -150,7 +150,6 @@ body .page{
 	margin: 0 0 1em 0;
 }
 
-
 .introFACE{
 	padding:0.6em;
 }
@@ -423,7 +422,8 @@ margin: 0 auto;
 	max-width: 100%;
 }
 .carousel-inner{
-	width: 100%;
+	position: relative;
+	transform: translate3d(0,0,0);
 }
 .carousel-item{
 	background-color: #F5F5F5;
