@@ -8,11 +8,12 @@
  * @since vantage 1.0
  * @license GPL 2.0
  */
+
 ?>
+
 
 <?php if ( have_posts() ) : ?>
 		<div id="my-slider" class="carousel slide" data-ride="carousel">
-
 			<div class="carousel-inner" role="listbox">
 			<?php $first=true; ?>
 			
@@ -22,11 +23,9 @@
 				<?php the_post_thumbnail(); ?>
 				
 				<?php the_content(); ?>
-				</div>
+					</div>
 
-				
-
-			<?php endwhile; ?>
+			<?php endwhile ;?>
 			</div>
 		</div>
 

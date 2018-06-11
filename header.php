@@ -17,7 +17,7 @@
 			<div class="logo-header">
 
 	 		<img src="<?php echo get_stylesheet_directory_uri(); ?>/css/assets/images/logo-white.svg">
-				<img class="logo img-fluid" src="/css/assets/images/logo-white.svg" alt="">
+				
 			</div>
 		<!--Barre de navigation-->
 			<nav class="navbar">

@@ -43,5 +43,7 @@ function Rnface_setup() {
 
 	//Fonction insertion d'image
 	//wp_get_attachement_image_src()
+
 ?>
+
 
