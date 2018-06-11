@@ -5,7 +5,6 @@
 		<div class="logo">
 
 	 		<img src="<?php echo get_stylesheet_directory_uri(); ?>/css/assets/images/logo-white.svg">
-			<img class=logo-face img-fluid src="assets/images/logo-white.svg"	  alt="">
 		</div>
 		<!--Coordonnées-->
 		<div class="adresse">

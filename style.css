@@ -9,7 +9,7 @@
 
 @font-face{
 	font-family:"Gotham";
-	src:url('../fonts/GOTHAM/GOTHAM-MEDIUM_0.OTF');
+	src:url('./fonts/GOTHAM/GOTHAM-MEDIUM_0.OTF');
 }
 html{
 	width:100%;
@@ -97,7 +97,7 @@ body .page{
 	width: 100%;
 	vertical-align: middle;
 	border-style: none;
-	background-color: #292929;0
+	background-color: #292929;
 }
 
 
@@ -422,7 +422,7 @@ margin: 0 auto;
 .container{
 	max-width: 100%;
 }
-.carousel-inner{
+/*.carousel-inner{
 	position: relative;
 	transform: translate3d(0,0,0);
 }
@@ -430,7 +430,7 @@ margin: 0 auto;
 	background-color: #F5F5F5;
 	height: 10em;
 }
-
+*/
 /*@media only screen and (min-width: 479px) {
 }
 
