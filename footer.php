@@ -1,5 +1,5 @@
 
-	
+	</div>
 	<footer>
 		<!--Logo de Face -->
 		<div class="logo">

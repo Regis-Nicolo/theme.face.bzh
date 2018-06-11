@@ -8,7 +8,7 @@
 	<?php wp_head();?>
 	<title>Face</title>
 </head>
-<body class="container">
+<body>
 
 	<!-- Header -->
 
@@ -29,3 +29,4 @@
 				</ul> -->
 			</nav>
 	</header>
+	<div class="container">
