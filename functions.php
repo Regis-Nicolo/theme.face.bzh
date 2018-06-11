@@ -37,7 +37,7 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
-<<<<<< HEAD
+
 	//Fonction insertion d'image
 	//wp_get_attachement_image_src()
 
