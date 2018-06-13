@@ -19,18 +19,19 @@ body{
 	font-family:"Gotham";
 	margin: 0;
 }
-header{
+.header{
 	background-color: #353334;
 	display:flex;
 	height: 3.5em;
 	margin-bottom: 2.5em;
 }
-header ul {
+.header ul {
 	display:flex;
 	align-items: center;
 	justify-content: center;
 	margin:0;
 }
+
 h1{
 	color:rgb(36,136,143);
 	font-size: 2.2em;
@@ -52,25 +53,21 @@ hr{
 	margin:0 0 1em 0;
 }
 
-span{
-	font-size: 3.4em;
-	font-weight: bold;
-}
 label{
 	margin-top: 0.6em;
 	margin-left: 1em;
 	color: rgb(36,136,143);
 }	
-input{
+.face-page input{
 	margin-left: 1em;
 	width: 95%;	
 	border: 1px solid rgb(36,136,143);
 }
-input#message{
+.face-page input#message{
 	height: 7em;
 	margin-bottom: 1em;
 }
-footer{
+.main-footer{
 	margin-top: 1.25em;
 	display: flex;
 	width: 100%;
@@ -120,7 +117,7 @@ body .page{
 .navbar ul li a:hover,
 .navbar ul li a.active{
 	color : rgb(36,136,143);
-	font-weight: bold;
+	/*font-weight: bold;*/
 	text-decoration: none;
 } 
 .navbar ul li a:active{
@@ -322,12 +319,18 @@ margin: 0 auto;
 .team:hover .overlay {
 	opacity:1;
 	height: 100%;
+	cursor: pointer;
 }
+
 .content-equipe{
-	font-size: 0.2em;
+	font-size: 1em;
 	text-align: center;
 	display: block;
 }
+.content-equipe .title{
+	font-size: 1.2em;	
+}
+
 .logo-partenaires{
 	background-color: rgb(36,136,143);
 	margin: 1em;
@@ -386,28 +389,34 @@ margin: 0 auto;
 	width: 90%;	
 }
 
-.btn-envoyer.btn-dark{ 
+.btn-envoyer.btn-dark, .face-page input[type='submit']{ 
 	margin-left: 1em;		
 	padding: 0.6em 2em;
 	text-align: center;
 	background-color: rgb(36,136,143);
 	color: #FFF;	
 	border: none;
+	cursor: pointer;
 }
 .batiment{
 	margin-top: 1.25em;
 }
 
-.adresse{
+.adresse, .adresse a, .adresse a:hover, .adresse a:visited{
 
 	color: #DDDDDD;
+}
+.adresse{
 	margin-left: 2em;
 	padding-top: 2em;
 }
-.icon{
-	background: #FFF;
-	border-radius: 1em;
-	margin-top: 0.2em;
+.icon-background{
+	/*background: #FFF;*/
+}
+.icon-logo{
+	color: #292929;	
+	margin: 0 !important;
+	border-radius: 50%;
 }
 .logo{
 	background-color: #292929;
@@ -421,6 +430,8 @@ margin: 0 auto;
 }
 .container{
 	max-width: 100%;
+	padding-left:10%;
+	padding-right:10%;
 }
 /*.carousel-inner{
 	position: relative;

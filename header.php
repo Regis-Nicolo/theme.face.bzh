@@ -12,7 +12,7 @@
 
 	<!-- Header -->
 
-	<header class="row">
+	<header class="header row">
 
 			<div class="logo-header">
 

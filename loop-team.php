@@ -24,7 +24,7 @@
 			<?php echo $monUrl; ?>
 			<div class="overlay">
 				<div class="content-equipe">
-					<span><?= get_the_title(); ?></span>
+					<span class='title'><?= get_the_title(); ?></span>
 					<hr class="ligne" />
 					<span><?= get_field('Function'); ?></span>
 				</div>
