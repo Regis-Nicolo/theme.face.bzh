@@ -74,6 +74,11 @@ label{
 	background-color: #353334;
 	height: 10em;
 }
+.single .footer{
+	margin-top: 2em;
+	padding-top: 1em;
+	border-top : 1px solid rgba(237,151,103,0.2);
+}
 
 body .ligne{
 	margin: 2em -1em;
@@ -120,14 +125,13 @@ body .page{
 	/*font-weight: bold;*/
 	text-decoration: none;
 } 
-.navbar ul li a:active{
-	color : rgb(36,136,143);
-	font-weight: bold;
-	text-decoration: none;
-}
 .presentation-row{
 	margin-top:0;
 	padding: 0;
+}
+.presentation-partner{
+	flex-direction: column;
+	background-color : rgb(36,136,143);
 }
 .intro{
 	margin-top: 5em;
@@ -184,6 +188,12 @@ body .page{
 	background-color: #FFF;
 	color: rgb(36,136,143);
 	border: none;
+}
+.previous{
+	float:left;
+}
+.next{
+	float:right;
 }
 .action{
 	padding:0;
@@ -298,6 +308,9 @@ margin: 0 auto;
 	margin-left:  2em;
 	margin-bottom: 0.5em;
 }
+.partner{
+	margin:1em;
+}
 .overlay{
 	background-color: rgb(36,136,143);	
 	color: #FFF;
@@ -316,12 +329,19 @@ margin: 0 auto;
 	position: absolute;
 
 }
+
 .team:hover .overlay {
 	opacity:1;
 	height: 100%;
 	cursor: pointer;
 }
-
+.partner:hover .overlay{
+	opacity:1;
+	height: 100%;
+	cursor: pointer;
+	background-color: rgb(250,250,250, 0.8);
+	color:rgb(36,136,143);
+}
 .content-equipe{
 	font-size: 1em;
 	text-align: center;
@@ -389,7 +409,7 @@ margin: 0 auto;
 	width: 90%;	
 }
 
-.btn-envoyer.btn-dark, .face-page input[type='submit']{ 
+.btn-dark, .face-page input[type='submit']{ 
 	margin-left: 1em;		
 	padding: 0.6em 2em;
 	text-align: center;
@@ -397,6 +417,9 @@ margin: 0 auto;
 	color: #FFF;	
 	border: none;
 	cursor: pointer;
+}
+.btn-dark a{
+	color: #FFF;
 }
 .batiment{
 	margin-top: 1.25em;

@@ -276,11 +276,17 @@ margin: 0 auto;
 	background-color: #FFF;
 }
 
-.team{
+.team, .alaune{
 	position: relative;
 	margin-left:  2em;
 	margin-bottom: 0.5em;
 }
+
+.alaune{
+	width:200px;
+	height:200px;
+}
+
 .overlay{
 	background-color: rgb(36,136,143);	
 	color: #FFF;
@@ -299,7 +305,7 @@ margin: 0 auto;
 	position: absolute;
 
 }
-.team:hover .overlay {
+.team:hover .overlay, .alaune:hover .overlay {
 	opacity:1;
 	height: 100%;
 }

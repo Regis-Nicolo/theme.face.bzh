@@ -38,7 +38,7 @@
 				<h4><?php the_title(); ?></h4>
 				<hr class="ligne" />
 				<p>
-					<?php the_content(); ?>
+					<?php echo get_field('brief'); ?>
 				</p>
 			<?php endwhile; ?>
 		
