@@ -157,13 +157,26 @@ body .page{
 	margin-top: 5em;
 }
 
-.presentation-text{
+.presentation-text, .white-div{
 	margin-top: 0;
-	padding: 1em;
 	background-color: #FFF;
 	box-sizing: border-box;
 	min-height:2em;
 	border: 0.2em solid #EFEFEF;
+}
+.presentation-text{
+	padding: 1em;
+}
+.single-loop{
+	display: flex;
+	align-items: center;	
+	height: 100%;
+}
+.single-loop > div{
+	height:100%;
+	padding:1em;
+	display: table;
+
 }
 
 .presentation-text .ligne{
@@ -200,7 +213,7 @@ body .page{
 	background-color: rgb(36,136,143);
 	padding-left: 1em;
 }
-.btn-plus {
+.btn-plus{
 	margin-top: 1em;
 	padding: 0.3em 3em;
 	font-size: 1.7em;
@@ -208,6 +221,9 @@ body .page{
 	background-color: #FFF;
 	color: rgb(36,136,143);
 	border: none;
+}
+a.nounderline{
+	text-decoration: none;
 }
 .previous{
 	float:left;
@@ -323,10 +339,16 @@ margin: 0 auto;
 	background-color: #FFF;
 }
 
-.team{
+.team, .alaune{
 	position: relative;
 	margin-left:  2em;
 	margin-bottom: 0.5em;
+}
+
+.alaune{
+	width:200px;
+	height:200px;
+	overflow: hidden;
 }
 .partner{
 	margin:1em;
