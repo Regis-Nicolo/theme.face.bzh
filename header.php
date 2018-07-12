@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php wp_head();?>
-	<title>Face</title>
+	<title><?php wp_title(); ?></title>
 </head>
 <body>
 
@@ -21,12 +21,7 @@
 			</div>
 		<!--Barre de navigation-->
 			<nav class="navbar">
-		<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-				<!-- <ul>
-					<li><a class="active" href="home.html">HOME</a></li>
-					<li><a href="association.html">L'ASSOCIATION</a></li>
-					<li><a href="contact.html">CONTACT/NOUS SITUER</a></li>
-				</ul> -->
+				<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 			</nav>
 	</header>
 	<div class="container">

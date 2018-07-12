@@ -285,6 +285,7 @@ margin: 0 auto;
 .alaune{
 	width:200px;
 	height:200px;
+	overflow: hidden;
 }
 
 .overlay{

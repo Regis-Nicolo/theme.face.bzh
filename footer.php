@@ -10,9 +10,10 @@
 		<div class="adresse">
 			
 
-	  		<p class><i class="fa fa-home" aria-hidden="true"></i>23 rue d'Aiguillon 35200 Rennes<br>
-		    <i class="fas fa-phone" aria-hidden="true"></i> 02 99 86 89 26 <br>
-		    <i class="fa fa-desktop" aria-hidden="true"></i> <a href='<?= bloginfo('url'); ?>'><?= bloginfo('url'); ?></a> <br>
+	  		<p>
+	  			<i class="fa fa-home padr1" aria-hidden="true"></i>23 rue d'Aiguillon 35200 Rennes<br>
+		    	<i class="fas fa-phone padr1" aria-hidden="true"></i> 02 99 86 89 26 <br>
+		    	<i class="fa fa-desktop padr1" aria-hidden="true"></i> <a href='<?= bloginfo('url'); ?>'><?= bloginfo('url'); ?></a> <br>
 
 		    <span class="fa-stack fa-1x">
   				<i class="fa fa-circle fa-stack-2x icon-background"></i>

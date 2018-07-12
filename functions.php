@@ -26,8 +26,24 @@ add_action('admin_init', 'Rnface_admin_scripts');
 //==========================================================
 function Rnface_setup() {
 	add_theme_support( 'post-thumbnails');
+	
 }
 add_action('after_setup_theme', 'Rnface_setup');	
+
+
+
+//==========================================================
+//=========             customizing theme 
+//==========================================================
+function Rnface_customize_register( $wp_customize ) {
+	   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'link_color', array(
+	'label'      => __( 'Header Color', 'mytheme' ),
+	'type' => 'text',
+	'section' => 'colors',
+	
+) ) );
+}
+add_action( 'customize_register', 'Rnface_customize_register' );
 
 //==========================================================
 //=========				menu
@@ -38,9 +54,6 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
-
-	//Fonction insertion d'image
-	//wp_get_attachement_image_src()
 
 ?>
 
